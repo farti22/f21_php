@@ -20,6 +20,6 @@
 
 ## Used materials
 
-- [PHP Wiki]({<https://www.php.net/manual/ru/index.php>)
-- [PHP Zametki (For sorting)]({<http://php-zametki.ru/php-nachinayushhim/136-php-sortirovka.html>)
+- [PHP Wiki](<https://www.php.net/manual/ru/index.php>)
+- [PHP Zametki (For sorting)](<http://php-zametki.ru/php-nachinayushhim/136-php-sortirovka.html>)
 - [E-Maxx (For GCD, LCM)](<https://e-maxx.ru/algo/euclid_algorithm>)
