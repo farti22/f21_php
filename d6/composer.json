@@ -1,0 +1,18 @@
+{
+    "name": "f21no/f21_php",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "":"src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "farti22",
+            "email": "artur.maza33@gmail.com"
+        }
+    ],
+    "require": {
+        "phpunit/phpunit": "^9.5"
+    }
+}
