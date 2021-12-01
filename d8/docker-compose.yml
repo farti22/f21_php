@@ -1,0 +1,41 @@
+version: "3.9"  # optional since v1.27.0
+services:
+  php:
+    build:
+      ./php
+    container_name: f21-php
+    restart: always
+    ports:
+      - 80:80
+    volumes:
+      - ./src:/var/www/html
+      - ./php/php.ini:/usr/local/etc/php/php.ini
+    depends_on:
+      - db
+  db:
+    image: mysql
+    container_name: f21-mysql
+    restart: always
+    environment:
+      MYSQL_DATABASE: medic
+      MYSQL_ROOT_PASSWORD: 2121
+    ports:
+      - 3308:3306
+    expose:
+      - '3306'
+    volumes:
+      - dbdata:/var/lib/mysql
+  phpmyadmin:
+    image: phpmyadmin
+    container_name: f21-phpmyadmin
+    restart: always
+    links:
+      - db
+    environment:
+      PMA_HOST: db
+      PMA_PORT: 3308
+      PMA_ARBITRARY: 1
+    ports:
+      - 8082:80
+volumes:
+  dbdata:

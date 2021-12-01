@@ -1,0 +1,63 @@
+* {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+table {
+  border: 3px solid black;
+  border-collapse: collapse;
+  margin: 32px;
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 8px;
+}
+
+nav {
+  display: flex; 
+}
+
+.editor {
+  display: flex;
+  align-items: center;
+}
+a {
+  padding: 8px;
+  margin: 8px;
+  border: 2px black solid;
+  text-decoration: none;
+  color: black;
+}
+input[type=submit] {
+  padding: 8px;
+  margin: 8px;
+  border: 2px black solid;
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: white;
+  background-color: black;
+}
+
+a.blocked {
+  color: black;
+  background-color: gray;
+  pointer-events: none;
+}
+
+.input-id {
+  padding: 8px;
+  margin: 8px;
+  border: 2px black solid;
+  height: 36px;
+  outline:none;
+}
+.input-id:focus {
+  border-radius: 0;
+}
+.vl {
+  border-left: 4px solid black;
+  margin: 0 20px;
+}
